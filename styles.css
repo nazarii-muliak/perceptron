@@ -1,0 +1,99 @@
+.container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto;
+	gap: 16px;
+	max-width: fit-content;
+	margin: 1rem;
+	padding: 1rem 0.5rem;
+	border: 1px solid;
+	border-radius: 10px;
+	box-shadow: 10px 5px 5px grey;
+	outline: solid 3px #8181815e;
+	background-image: url('./images/playwood.jpg');
+}
+
+.gauge-container {
+	align-self: flex-start;
+	justify-self: flex-end;
+	padding: 1rem;
+}
+
+.switch-container {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	width: 80px;
+	border-radius: 13px;
+	border: 5px solid #d2aa72;
+	cursor: pointer;
+	color: #ffffff;
+	font-size: 17px;
+	padding: 16px 23px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #0e0e0e;
+}
+
+.knob-indicator {
+	font-size: large;
+	font-weight: 700;
+	background: linear-gradient(48deg, #beb0b0, transparent);
+	color: black;
+	padding: 1rem;
+	border-radius: 2rem;
+}
+
+.indicator {
+	display: inline-block;
+	margin: 15px;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+}
+
+.--succes {
+	background: #00d563;
+	border: 1px solid #00bc58; /* darkened 5% */
+	color: #00d563;
+	animation: blink 3s infinite;
+}
+
+.--info {
+	background: #4c84ff;
+	border: 1px solid #3a73f2; /* darkened 5% */
+	color: #4c84ff;
+	animation: blink 3s infinite;
+}
+
+.--warning {
+	background: #ffc400;
+	border: 1px solid #e6b000; /* darkened 5% */
+	color: #ffc400;
+	animation: blink 3s infinite;
+}
+
+.--error {
+	background: #fd2f51;
+	border: 1px solid #e62a49; /* darkened 5% */
+	color: #fd2f51;
+	animation: blink 3s infinite;
+}
+
+.--offline {
+	background: #dfe1e9;
+	border: 1px solid #c9cbd3; /* darkened 5% */
+	color: #dfe1e9;
+	animation: blink 3s infinite;
+}
+
+@keyframes blink {
+	0% {
+		box-shadow: 0 0 10px;
+	}
+	50% {
+		box-shadow: 0 0 30px;
+	}
+	100% {
+		box-shadow: 0 0 10px;
+	}
+}

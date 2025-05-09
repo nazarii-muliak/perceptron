@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<span class="indicator --succes"></span>
+	<span class="indicator --info"></span>
+	<span class="indicator --warning"></span>
+	<span class="indicator --error"></span>
+	<span class="indicator --offline"></span>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Perceptron Example</title>
+		<link rel="stylesheet" href="./styles.css" />
+		<script src="./logic.js"></script>
+		<script src="input-knobs.js"></script>
+		<script src="gauge.min.js"></script>
+	</head>
+	<body>
+		<p>This is a basic PERCEPTRON model created as an example.</p>
+		<div class="container">
+			<div id="switchCase" class="container"></div>
+			<div id="knobCase" class="container"></div>
+			<div class="switch-container gauge-container">
+				<div class="container">
+					<canvas
+						style="padding-left: 2rem"
+						id="gauge"
+						width="300"
+						height="300"
+					></canvas>
+				</div>
+				<span id="value" class="knob-indicator">0</span>
+			</div>
+		</div>
+	</body>
+</html>
